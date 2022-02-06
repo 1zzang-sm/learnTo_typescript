@@ -1,0 +1,26 @@
+<script>
+	// 함수를 생성하면 prototype을 자동으로 만듬
+	// 유전자 역활임
+	function 기계(){
+		this.q = 'strike';
+		this.w = 'snowball';
+	}
+	기계.prototype.name = 'kim'
+
+	let nunu = new 기계();
+	// obj에서 자료를 뽑을때
+	// 1. 직접 자료를 가지고 있으면 그거 출력
+	// 2. 없으면 부모 유전자까지 뒤짐
+	// 3. 없으면 부모의 부모유전자까지..
+	nunu.name
+	let array = [4,2,1]; 
+	let array = new Array(4,2,1)
+	array.sort()
+	Array.prototype.함수 = ()=>{
+		console.log('ok')
+	}
+	let array = [4,2,1]; 
+	array.함수
+	
+
+</script>
