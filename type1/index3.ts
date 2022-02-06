@@ -43,3 +43,24 @@ let 학교: {
 }
 학교.score[4] = false;
 학교.friend = ['Lee', 학교.teacher]
+
+// let y; any type이 되버림 
+function 함수1(x :number):number {
+	return x * 2;
+}
+함수1(2)
+
+// ? - 파라미터가 옵션일 경우에 사용 함수 호출시 파라미터를 꼭 안넣어도 되는 그런경우
+// ? - ex) x? :number | undefined 
+function 함수2(x? :number) :void {
+	1 + 1
+}
+함수2(40)
+함수2()
+
+function 함수3(x: number | string): void {
+	// if (x의 타입이 숫자면) {
+	// 	console.log(x + 3)
+	// }
+	// 네로잉 
+}
